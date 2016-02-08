@@ -1,0 +1,76 @@
+.\" Manpage for ftp.
+.\" Contact jacob_f@epitech.eu .in to correct errors or typos.
+
+.TH man 1  " 2015" "1.1" "ftp man page   Success the Moulinette of the 22 march 2015"
+
+.SH NAME
+myftp \- A basic server and a basic client of a File Transfert Protocol.
+.SH SYNOPSIS
+\fB./client \fR [\fIhost\fR] [\fIport\fR]
+\fB./serveur \fR [\fIport\fR]
+
+.SH DESCRIPTION
+\fBserver \fR is a programm that handle some differents connections and send or received file and can remove file heberged on server
+.TP
+\fBclient \fR is the client of the application.
+\fWhen a user log to the server. The server creat or open a repository wish stor some files that the user on the client can send then received.
+
+.SH OPTIONS
+.TP
+\fB\-get NAME_FILE\fR \fB\fR
+Get a file wich is on the server to the client.
+.TP
+\fB\-put NAME_FILE\fR \fB\fR
+Put a file wich is on client to the server.
+.TP
+\fB\-mput NAME_FILE1 ... NAME_FILE2 \fR \fB\fR
+Put all files passed in argument wich is on client to the server.
+.TP
+\fB\-mget NAME_FILE1 ... NAME_FILE2 \fR \fB\fR
+Get all files passed in argument from the server to the client.
+.TP
+\fB\-ls\fR \fB\fR
+List the repertory where is the client is on the server
+.TP
+\fB\-pwd\fR \fB\fR
+Request the server to have the path where is the client.
+.TP
+\fB\-quit\fR \fB\fR
+Quit the connection with the server and leave the programm.
+.TP
+\fB\-lls\fR \fB\fR
+List the client's local repository.
+.TP
+\fB\-lpwd\fR \fB\fR
+Print the client's local repository.
+.TP
+\fB\-rm FILE_NAME\fR \fB\fR
+Remove the file [FILE_NAME] on the server.
+.TP
+\fB\-lrm\fR FILE_NAME\fB\fR
+Remove the local file [FILE_NAME].
+.TP
+\fB\-rmdir REPOSITORY_NAME\fR \fB\fR
+Remove the repository [REPOSITORY_NAME] on the server.
+.TP
+\fB\-lrmdir\fR FILE_NAME\fB\fR
+Remove the local repositoty [REPOSITORY_NAME].
+.TP
+\fB\-sys\fR \fB\fR
+Request the server to have informations about his system.
+.TP
+\fB\-lsys\fR \fB\fR
+print the informations about the client system.
+.TP
+\fB\-clear\fR \fB\fR
+Clear the screen of the client
+.TP
+.TP
+.SH SEE ALSO
+No related manpage.
+.SH REPORTING BUGS
+No known bugs.
+.br
+Report bugs to felix.jacob@epitech.eu
+.SH AUTHOR
+jacob_f
